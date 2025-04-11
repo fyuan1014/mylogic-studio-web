@@ -1,46 +1,142 @@
-# Getting Started with Create React App
+# MyLogic Studio Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is the official website for MyLogic Studio LLC, showcasing our technology services, products, and company information.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Responsive design that works on all devices
+- Modern UI with interactive components
+- Sections for services, products, about, and contact
+- Contact form for inquiries
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- React
+- TypeScript
+- Styled Components
+- React Router
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Development Setup
 
-### `npm test`
+### Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Node.js (version 14.x or later)
+- npm or yarn
 
-### `npm run build`
+### Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository
+2. Install dependencies:
+   ```
+   npm install
+   ```
+3. Start the development server:
+   ```
+   npm start
+   ```
+4. Open [http://localhost:3000](http://localhost:3000) to view the site in your browser
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Deployment Options
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 1. GitHub Pages (Free)
 
-### `npm run eject`
+One of the easiest and most cost-effective ways to deploy your website:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+1. Install the gh-pages package:
+   ```
+   npm install --save-dev gh-pages
+   ```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. Add the following to your `package.json`:
+   ```json
+   "homepage": "https://yourusername.github.io/repository-name",
+   "scripts": {
+     "predeploy": "npm run build",
+     "deploy": "gh-pages -d build"
+   }
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+3. Deploy your website:
+   ```
+   npm run deploy
+   ```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### 2. Netlify (Free tier available)
 
-## Learn More
+Netlify offers a generous free tier with continuous deployment from Git:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Create an account on [Netlify](https://www.netlify.com/)
+2. Connect your Git repository
+3. Configure build settings:
+   - Build command: `npm run build`
+   - Publish directory: `build`
+4. Deploy
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Netlify will automatically build and deploy your site when you push changes to your repository.
+
+### 3. Vercel (Free tier available)
+
+Vercel is optimized for React applications:
+
+1. Create an account on [Vercel](https://vercel.com/)
+2. Install the Vercel CLI:
+   ```
+   npm install -g vercel
+   ```
+3. Deploy:
+   ```
+   vercel
+   ```
+
+### 4. AWS Amplify (Pay as you go)
+
+For scalable, enterprise-grade hosting:
+
+1. Create an AWS account
+2. Set up AWS Amplify Console
+3. Connect your Git repository
+4. Configure build settings
+5. Deploy
+
+### 5. Traditional Web Hosting
+
+If you prefer traditional web hosting:
+
+1. Build your React app:
+   ```
+   npm run build
+   ```
+2. Upload the contents of the `build` folder to your web hosting server via FTP or their control panel
+
+## Custom Domain Setup
+
+For all deployment options above, you can connect a custom domain:
+
+1. Purchase a domain from a registrar like Namecheap, GoDaddy, or Google Domains (~$10-15/year)
+2. Follow the custom domain setup instructions for your chosen deployment platform
+3. Update DNS settings at your domain registrar to point to your deployment
+
+## Recommended Cost-Effective Setup
+
+For the best balance of cost, performance, and ease of use:
+
+1. Deploy on Netlify or Vercel (Free tier)
+2. Purchase a custom domain (~$10-15/year)
+3. Connect your custom domain to your deployment
+
+This setup provides:
+- Free hosting with HTTPS
+- Continuous deployment from Git
+- Global CDN for fast loading
+- Custom domain support
+- Total cost: Only the domain registration fee (~$10-15/year)
+
+## Maintenance
+
+- Keep dependencies updated regularly with `npm update`
+- Monitor analytics to understand user behavior
+- Make periodic content updates to keep the site fresh
+
+## Support
+
+For any questions or support, please contact us at info@mylogicstudio.com.
