@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/mylogic-studio-web/static/css/main.e4869db8.css",
+    "main.js": "/mylogic-studio-web/static/js/main.e1262dcf.js",
+    "static/js/453.813d7188.chunk.js": "/mylogic-studio-web/static/js/453.813d7188.chunk.js",
+    "index.html": "/mylogic-studio-web/index.html",
+    "main.e4869db8.css.map": "/mylogic-studio-web/static/css/main.e4869db8.css.map",
+    "main.e1262dcf.js.map": "/mylogic-studio-web/static/js/main.e1262dcf.js.map",
+    "453.813d7188.chunk.js.map": "/mylogic-studio-web/static/js/453.813d7188.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e4869db8.css",
+    "static/js/main.e1262dcf.js"
+  ]
+}
