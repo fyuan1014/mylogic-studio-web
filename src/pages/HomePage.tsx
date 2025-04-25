@@ -173,13 +173,13 @@ const HomePage: React.FC = () => {
       >
         <ProductList>
           <Card
-            title="MyPBN APP"
-            image="https://via.placeholder.com/600x400"
+            title="ColorCrafter APP"
+            image={`${process.env.PUBLIC_URL}/images/products/colorcrafter.jpg`}
           >
             <p>An iOS based APP allows users to create their own paint by number art work with their own images, which allows you to create an art work for your loved ones, pets, or even yourself.</p>
             <Button 
               variant="text" 
-              onClick={() => navigate('/products#MyPBN')}
+              onClick={() => navigate('/products#ColorCrafter')}
             >
               Learn More →
             </Button>
@@ -187,7 +187,7 @@ const HomePage: React.FC = () => {
           
           <Card
             title="More to Come"
-            image="https://via.placeholder.com/600x400"
+            image={`${process.env.PUBLIC_URL}/images/products/future-products.jpg`}
           >
             <p>We're constantly developing new innovative solutions to help businesses thrive in the digital world. Stay tuned for more exciting products!</p>
             <Button 

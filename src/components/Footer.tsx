@@ -94,24 +94,18 @@ const Footer: React.FC = () => {
         
         <FooterSection>
           <FooterTitle>Contact</FooterTitle>
-          <FooterText>All Inquiries - contact.mylogicstudio@gmail.com</FooterText>
+          <FooterText>All Inquiries - mls@mylogicstudio.com</FooterText>
           <FooterText>General Inquiries/Support - (352) 216-0122</FooterText>
         </FooterSection>
         
         <FooterSection>
           <FooterTitle>Socials</FooterTitle>
           <SocialLinks>
-            <SocialLink href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-              <i className="fab fa-twitter"></i>
+            <SocialLink href="https://x.com/MylogicStudio" target="_blank" rel="noopener noreferrer">
+                  <i className="fab fa-twitter"></i>
             </SocialLink>
-            <SocialLink href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-              <i className="fab fa-facebook"></i>
-            </SocialLink>
-            <SocialLink href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-              <i className="fab fa-linkedin"></i>
-            </SocialLink>
-            <SocialLink href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-              <i className="fab fa-instagram"></i>
+            <SocialLink href="https://www.instagram.com/mylogicstudio/" target="_blank" rel="noopener noreferrer">
+                  <i className="fab fa-instagram"></i>
             </SocialLink>
           </SocialLinks>
         </FooterSection>

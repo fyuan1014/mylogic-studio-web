@@ -172,7 +172,7 @@ const ServicesPage: React.FC = () => {
               <ServiceFeature>UI/UX design and prototyping</ServiceFeature>
               <ServiceFeature>API integration and backend development</ServiceFeature>
               <ServiceFeature>Ongoing maintenance and support</ServiceFeature>
-              <ServiceFeature>Specialized apps like MyPBN for creative projects</ServiceFeature>
+              <ServiceFeature>Specialized apps like ColorCrafter for creative projects</ServiceFeature>
             </ServiceFeatures>
             <Button 
               variant="primary" 
@@ -182,7 +182,7 @@ const ServicesPage: React.FC = () => {
             </Button>
           </ServiceContent>
           <ServiceImage>
-            <img src="https://via.placeholder.com/600x400" alt="Mobile App Development" />
+            <img src={`${process.env.PUBLIC_URL}/images/services/mobile-app-development.jpg`} alt="Mobile App Development" />
           </ServiceImage>
         </ServiceSection>
       </Section>
@@ -190,7 +190,7 @@ const ServicesPage: React.FC = () => {
       <Section id="web-app-development" background="primary">
         <ServiceSection>
           <ServiceImage>
-            <img src="https://via.placeholder.com/600x400" alt="Web App Development" />
+            <img src={`${process.env.PUBLIC_URL}/images/services/web-app-development.jpg`} alt="Web App Development" />
           </ServiceImage>
           <ServiceContent>
             <ServiceTitle>Web App Development</ServiceTitle>

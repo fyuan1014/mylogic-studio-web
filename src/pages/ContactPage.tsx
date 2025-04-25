@@ -1,18 +1,21 @@
 import React from 'react';
 import styled from 'styled-components';
 import Section from '../components/Section';
-import ContactForm from '../components/ContactForm';
 
 const ContactHeader = styled.div`
   text-align: center;
   padding: 8rem 0 4rem;
   background-color: var(--dark-background);
   color: var(--light-text);
+  background-image: linear-gradient(135deg, rgba(10, 25, 41, 0.95), rgba(74, 107, 255, 0.7));
+  background-size: cover;
+  background-position: center;
 `;
 
 const HeaderTitle = styled.h1`
-  font-size: 3rem;
+  font-size: 3.5rem;
   margin-bottom: 1.5rem;
+  font-weight: 700;
   
   @media (max-width: 768px) {
     font-size: 2.5rem;
@@ -23,6 +26,7 @@ const HeaderDescription = styled.p`
   font-size: 1.25rem;
   max-width: 800px;
   margin: 0 auto;
+  line-height: 1.8;
   
   @media (max-width: 768px) {
     font-size: 1.125rem;
@@ -31,77 +35,109 @@ const HeaderDescription = styled.p`
 
 const ContactLayout = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
+  grid-template-columns: 1fr;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: var(--background-color);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  padding: 3rem;
   
-  @media (max-width: 992px) {
-    grid-template-columns: 1fr;
-    gap: 3rem;
+  @media (max-width: 768px) {
+    padding: 1.5rem;
   }
 `;
 
-const ContactInfo = styled.div`
-  @media (max-width: 992px) {
-    order: 2;
-  }
-`;
+const ContactInfo = styled.div``;
 
 const InfoTitle = styled.h2`
-  font-size: 1.75rem;
-  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: var(--primary-color);
+  position: relative;
+  
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -0.75rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: var(--accent-color);
+    border-radius: 3px;
+  }
+`;
+
+const InfoBlocks = styled.div`
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 const InfoBlock = styled.div`
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+  padding: 1.5rem;
+  border-radius: var(--border-radius);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.03);
+  
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
 `;
 
 const InfoSubtitle = styled.h3`
   font-size: 1.25rem;
   margin-bottom: 1rem;
   color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  
+  svg, i {
+    margin-right: 0.75rem;
+    font-size: 1.5rem;
+  }
 `;
 
 const InfoText = styled.p`
   margin-bottom: 0.5rem;
   font-size: 1.125rem;
   color: var(--gray-text);
+  line-height: 1.6;
 `;
 
 const InfoLink = styled.a`
   color: var(--primary-color);
   text-decoration: none;
   transition: var(--transition);
+  font-weight: 500;
   
   &:hover {
-    color: var(--secondary-color);
-  }
-`;
-
-const Map = styled.div`
-  margin-top: 2rem;
-  height: 300px;
-  border-radius: var(--border-radius);
-  overflow: hidden;
-  
-  iframe {
-    width: 100%;
-    height: 100%;
-    border: 0;
+    color: var(--accent-color);
+    text-decoration: underline;
   }
 `;
 
 const SocialLinks = styled.div`
   display: flex;
   gap: 1rem;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
+  justify-content: center;
 `;
 
 const SocialLink = styled.a`
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 3rem;
+  height: 3rem;
   background-color: rgba(74, 107, 255, 0.1);
   color: var(--primary-color);
   border-radius: 50%;
@@ -111,23 +147,9 @@ const SocialLink = styled.a`
   &:hover {
     background-color: var(--primary-color);
     color: var(--light-text);
-    transform: translateY(-3px);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(74, 107, 255, 0.2);
   }
-`;
-
-const ContactFormContainer = styled.div`
-  background-color: var(--dark-background);
-  border-radius: var(--border-radius);
-  padding: 2rem;
-  box-shadow: var(--box-shadow);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-`;
-
-const ContactFormTitle = styled.h2`
-  font-size: 1.75rem;
-  margin-bottom: 1.5rem;
-  text-align: center;
-  color: var(--light-text);
 `;
 
 const ContactPage: React.FC = () => {
@@ -148,36 +170,49 @@ const ContactPage: React.FC = () => {
           <ContactInfo>
             <InfoTitle>Get In Touch</InfoTitle>
             
-            <InfoBlock>
-              <InfoSubtitle>Contact</InfoSubtitle>
-              <InfoText>Email: <InfoLink href="mailto:contact.mylogicstudio@gmail.com">contact.mylogicstudio@gmail.com</InfoLink></InfoText>
-              <InfoText>Phone: <InfoLink href="tel:+13522160122">(352) 216-0122</InfoLink></InfoText>
-            </InfoBlock>
-            
-            <InfoBlock>
-              <InfoSubtitle>Business Hours</InfoSubtitle>
-              <InfoText>Monday - Friday: 9:00 AM - 6:00 PM EST</InfoText>
-              <InfoText>Saturday - Sunday: Closed</InfoText>
-            </InfoBlock>
-            
-            <InfoBlock>
-              <InfoSubtitle>Follow Us</InfoSubtitle>
-              <SocialLinks>
-                <SocialLink href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-                  <i className="fab fa-twitter"></i>
-                </SocialLink>
-                <SocialLink href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-                  <i className="fab fa-facebook-f"></i>
-                </SocialLink>
-                <SocialLink href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-                  <i className="fab fa-linkedin-in"></i>
-                </SocialLink>
-                <SocialLink href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-                  <i className="fab fa-instagram"></i>
-                </SocialLink>
-              </SocialLinks>
-            </InfoBlock>
-          
+            <InfoBlocks>
+              <InfoBlock>
+                <InfoSubtitle>
+                  <i className="fas fa-map-marker-alt"></i>
+                  Visit Us
+                </InfoSubtitle>
+                <InfoText>5 Bufton Farm RD</InfoText>
+                <InfoText>Clinton, MA 01510</InfoText>
+              </InfoBlock>
+              
+              <InfoBlock>
+                <InfoSubtitle>
+                  <i className="fas fa-envelope"></i>
+                  Contact
+                </InfoSubtitle>
+                <InfoText>Email: <InfoLink href="mailto:info@mylogicstudio.com">info@mylogicstudio.com</InfoLink></InfoText>
+                <InfoText>Phone: <InfoLink href="tel:+13522160122">(352) 216-0122</InfoLink></InfoText>
+              </InfoBlock>
+              
+              <InfoBlock>
+                <InfoSubtitle>
+                  <i className="fas fa-clock"></i>
+                  Business Hours
+                </InfoSubtitle>
+                <InfoText>Monday - Friday: 9:00 AM - 6:00 PM EST</InfoText>
+                <InfoText>Saturday - Sunday: Closed</InfoText>
+              </InfoBlock>
+              
+              <InfoBlock>
+                <InfoSubtitle>
+                  <i className="fas fa-share-alt"></i>
+                  Follow Us
+                </InfoSubtitle>
+                <SocialLinks>
+                  <SocialLink href="https://x.com/MylogicStudio" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                    <i className="fab fa-twitter"></i>
+                  </SocialLink>
+                  <SocialLink href="https://www.instagram.com/mylogicstudio/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                    <i className="fab fa-instagram"></i>
+                  </SocialLink>
+                </SocialLinks>
+              </InfoBlock>
+            </InfoBlocks>
           </ContactInfo>
         </ContactLayout>
       </Section>

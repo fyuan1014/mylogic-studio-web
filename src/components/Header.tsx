@@ -22,11 +22,27 @@ const NavContainer = styled.div`
 const Logo = styled(Link)`
   display: flex;
   align-items: center;
+  text-decoration: none;
 `;
 
 const LogoImage = styled.img`
   height: 40px;
   width: auto;
+  margin-right: 10px;
+`;
+
+const LogoText = styled.span`
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  
+  .accent {
+    color: var(--accent-color);
+  }
+  
+  @media (max-width: 576px) {
+    display: none;
+  }
 `;
 
 const MenuButton = styled.button`
@@ -99,7 +115,8 @@ const Header: React.FC = () => {
     <HeaderContainer>
       <NavContainer>
         <Logo to="/">
-          <LogoImage src="/logo192.png" alt="MyLogic Studio Logo" />
+          <LogoImage src={`${process.env.PUBLIC_URL}/logo192.png`} alt="MyLogic Studio Logo" />
+          <LogoText>MyLogic<span className="accent">Studio</span></LogoText>
         </Logo>
         
         <MenuButton onClick={toggleMenu}>

@@ -107,7 +107,7 @@ If you prefer traditional web hosting:
    npm run build
    ```
 2. Upload the contents of the `build` folder to your web hosting server via FTP or their control panel
-
+   
 ## Custom Domain Setup
 
 For all deployment options above, you can connect a custom domain:

@@ -132,8 +132,8 @@ const AboutPage: React.FC = () => {
         <div className="container">
           <HeaderTitle>About MyLogic Studio</HeaderTitle>
           <HeaderDescription>
-            We are a technology company dedicated to creating innovative digital solutions that transform how people interact with technology.
-            From our flagship MyPBN app to comprehensive business solutions, we're committed to delivering exceptional value to our clients.
+            We are an AI driven technology company dedicated to creating innovative digital solutions that transform how people interact with AI and technology.
+            From our flagship ColorCrafter app to comprehensive business solutions, we're committed to delivering exceptional value to our clients.
           </HeaderDescription>
         </div>
       </AboutHeader>
@@ -143,18 +143,18 @@ const AboutPage: React.FC = () => {
           <AboutContent>
             <AboutTitle>Our Story</AboutTitle>
             <AboutDescription>
-              MyLogic Studio was founded with a clear vision: to help businesses thrive in the digital world through innovative technology solutions. 
-              We started as a small team of tech enthusiasts who believed that technology, when properly implemented, could transform businesses and create exceptional experiences for users.
+              MyLogic Studio was founded with a clear vision: to help businesses thrive in the digital world through innovative AI driven solutions. 
+              We started as a small team of tech enthusiasts who believed that AI technology, when properly implemented, could transform businesses and create exceptional experiences for users.
             </AboutDescription>
             <AboutDescription>
-              Since our inception, we've grown into a dynamic company of talented developers, designers, and strategists who are passionate about creating digital solutions that drive real business value. We've partnered with companies across various industries, from startups to enterprises, helping them leverage technology to achieve their goals.
+              Since our inception, we've grown into a dynamic company of talented developers, designers, and strategists who are passionate about creating digital solutions that drive real business value. We are looking for partnering with companies across various industries, from startups to enterprises, helping them leverage AI technology to achieve their goals.
             </AboutDescription>
             <AboutDescription>
-              Today, MyLogic Studio continues to push the boundaries of what's possible in mobile and web app development, digital platforms, and subscription-based services, always with a focus on quality, innovation, and client success.
+              Today, MyLogic Studio continues to push the boundaries of what's possible in mobile and web app development with agentic AI, digital platforms, and subscription-based services, always with a focus on quality, innovation, and client success.
             </AboutDescription>
           </AboutContent>
           <AboutImage>
-            <img src="https://via.placeholder.com/600x400" alt="About MyLogic Studio" />
+            <img src={`${process.env.PUBLIC_URL}/images/about/team.jpg`} alt="About MyLogic Studio" />
           </AboutImage>
         </AboutSection>
       </Section>

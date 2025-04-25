@@ -135,12 +135,12 @@ const ProductsPage: React.FC = () => {
         description="Discover our innovative digital solutions that help businesses thrive in the digital world."
       >
         <ProductGrid>
-          <ProductCard id="MyPBN">
+          <ProductCard id="ColorCrafter">
             <ProductImage>
-              <img src="https://via.placeholder.com/600x400" alt="MyPBN" />
+              <img src={`${process.env.PUBLIC_URL}/images/products/colorcrafter.jpg`} alt="ColorCrafter App" />
             </ProductImage>
             <ProductContent>
-              <ProductTitle>MyPBN APP</ProductTitle>
+              <ProductTitle>ColorCrafter APP</ProductTitle>
               <ProductDescription>
                 An iOS based APP allows users to create their own paint by number art work with their own images, which allows you to create an art work for your loved ones, pets, or even yourself.
               </ProductDescription>
@@ -173,7 +173,7 @@ const ProductsPage: React.FC = () => {
 
           <ProductCard>
             <ProductImage>
-              <img src="https://via.placeholder.com/600x400" alt="More to Come" />
+              <img src={`${process.env.PUBLIC_URL}/images/products/future-products.jpg`} alt="More to Come" />
             </ProductImage>
             <ProductContent>
               <ProductTitle>More to Come</ProductTitle>
