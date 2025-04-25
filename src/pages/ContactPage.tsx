@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Section from '../components/Section';
+import ContactForm from '../components/ContactForm';
 
 const ContactHeader = styled.div`
   text-align: center;
@@ -36,6 +37,7 @@ const HeaderDescription = styled.p`
 const ContactLayout = styled.div`
   display: grid;
   grid-template-columns: 1fr;
+  gap: 3rem;
   max-width: 800px;
   margin: 0 auto;
   background-color: var(--background-color);
@@ -152,6 +154,30 @@ const SocialLink = styled.a`
   }
 `;
 
+const FormSection = styled.div`
+  margin-top: 2rem;
+`;
+
+const FormTitle = styled.h2`
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: var(--primary-color);
+  position: relative;
+  
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -0.75rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: var(--accent-color);
+    border-radius: 3px;
+  }
+`;
+
 const ContactPage: React.FC = () => {
   return (
     <>
@@ -214,6 +240,11 @@ const ContactPage: React.FC = () => {
               </InfoBlock>
             </InfoBlocks>
           </ContactInfo>
+          
+          <FormSection>
+            <FormTitle>Send Us a Message</FormTitle>
+            <ContactForm />
+          </FormSection>
         </ContactLayout>
       </Section>
     </>

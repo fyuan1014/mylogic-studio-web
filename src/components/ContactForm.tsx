@@ -32,50 +32,50 @@ const Label = styled.label`
   margin-bottom: 0.5rem;
   font-weight: 500;
   font-size: 0.9rem;
-  color: var(--light-text);
+  color: var(--text-color);
 `;
 
 const Input = styled.input`
   padding: 0.75rem;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid var(--border-color);
   border-radius: var(--border-radius);
   font-family: inherit;
   font-size: 0.9rem;
-  background-color: rgba(255, 255, 255, 0.1);
-  color: var(--light-text);
+  background-color: white;
+  color: var(--text-color);
   transition: var(--transition);
   
   &:focus {
     outline: none;
-    border-color: var(--accent-color);
-    box-shadow: 0 0 0 2px rgba(255, 123, 92, 0.2);
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(74, 107, 255, 0.2);
   }
   
   &::placeholder {
-    color: rgba(255, 255, 255, 0.6);
+    color: #aaa;
   }
 `;
 
 const Textarea = styled.textarea`
   padding: 0.75rem;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid var(--border-color);
   border-radius: var(--border-radius);
   font-family: inherit;
   font-size: 0.9rem;
   resize: vertical;
   min-height: 100px;
-  background-color: rgba(255, 255, 255, 0.1);
-  color: var(--light-text);
+  background-color: white;
+  color: var(--text-color);
   transition: var(--transition);
   
   &:focus {
     outline: none;
-    border-color: var(--accent-color);
-    box-shadow: 0 0 0 2px rgba(255, 123, 92, 0.2);
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(74, 107, 255, 0.2);
   }
   
   &::placeholder {
-    color: rgba(255, 255, 255, 0.6);
+    color: #aaa;
   }
 `;
 
@@ -86,14 +86,15 @@ const ErrorMessage = styled.div`
 `;
 
 const SuccessMessage = styled.div`
-  background-color: rgba(76, 217, 100, 0.2);
-  color: #4cd964;
+  background-color: rgba(76, 217, 100, 0.15);
+  color: #2e7c39;
   padding: 0.75rem;
   border-radius: var(--border-radius);
   margin-bottom: 1rem;
   font-weight: 500;
   font-size: 0.9rem;
   text-align: center;
+  border: 1px solid rgba(76, 217, 100, 0.3);
 `;
 
 const SubmitButton = styled(Button)`
