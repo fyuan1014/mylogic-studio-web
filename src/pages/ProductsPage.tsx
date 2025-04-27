@@ -124,8 +124,7 @@ const ProductsPage: React.FC = () => {
         <div className="container">
           <HeaderTitle>Our Products</HeaderTitle>
           <HeaderDescription>
-            Explore our innovative digital products and solutions designed to help businesses transform their operations,
-            enhance customer experiences, and drive growth in the digital age.
+            Discover innovative solutions designed to transform your business and enhance your digital presence.
           </HeaderDescription>
         </div>
       </ProductHeader>
@@ -162,12 +161,20 @@ const ProductsPage: React.FC = () => {
                   <span>Perfect for gifts and personal projects</span>
                 </FeatureItem>
               </ProductFeatures>
-              <Button 
-                variant="primary"
-                onClick={() => window.open('https://apps.apple.com', '_blank')}
-              >
-                Download on App Store
-              </Button>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+                <Button 
+                  variant="primary"
+                  onClick={() => window.open('https://apps.apple.com', '_blank')}
+                >
+                  Download on App Store
+                </Button>
+                <Button 
+                  variant="text"
+                  onClick={() => navigate('/colorcrafter/legal')}
+                >
+                  View Legal Documents
+                </Button>
+              </div>
             </ProductContent>
           </ProductCard>
 

@@ -12,6 +12,9 @@ import ServicesPage from './pages/ServicesPage';
 import ProductsPage from './pages/ProductsPage';
 import ContactPage from './pages/ContactPage';
 import AboutPage from './pages/AboutPage';
+import ColorCrafterLegalPage from './pages/ColorCrafterLegalPage';
+import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
+import TermsOfServicePage from './pages/TermsOfServicePage';
 
 const AppContainer = styled.div`
   display: flex;
@@ -34,6 +37,11 @@ function App() {
           <Route path="/products" element={<ProductsPage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          
+          {/* ColorCrafter Legal Pages */}
+          <Route path="/colorcrafter/legal" element={<ColorCrafterLegalPage />} />
+          <Route path="/colorcrafter/privacy-policy" element={<PrivacyPolicyPage />} />
+          <Route path="/colorcrafter/terms-of-service" element={<TermsOfServicePage />} />
         </Routes>
       </Main>
       <Footer />
