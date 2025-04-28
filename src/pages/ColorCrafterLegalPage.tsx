@@ -110,7 +110,7 @@ const ColorCrafterLegalPage: React.FC = () => {
         <div className="container">
           <HeaderTitle>ColorCrafter App Legal Documents</HeaderTitle>
           <HeaderDescription>
-            Access important legal information about our paint-by-number app
+            Access important legal information about our ColorCrafter app
           </HeaderDescription>
         </div>
       </PageHeader>
