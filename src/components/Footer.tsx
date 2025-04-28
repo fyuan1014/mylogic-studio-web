@@ -96,7 +96,6 @@ const Footer: React.FC = () => {
           <FooterTitle>Contact</FooterTitle>
           <FooterText>All Inquiries - mls@mylogicstudio.com</FooterText>
           <FooterText>General Inquiries/Support - (352) 216-0122</FooterText>
-          <FooterLink to="/contact">Leave us a Message</FooterLink>
         </FooterSection>
         
         <FooterSection>
