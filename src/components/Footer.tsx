@@ -109,7 +109,7 @@ const Footer: React.FC = () => {
             <SocialLink href="https://x.com/MylogicStudio" target="_blank" rel="noopener noreferrer">
                   <i className="fab fa-twitter"></i>
             </SocialLink>
-            <SocialLink href="https://www.instagram.com/mylogicstudio/" target="_blank" rel="noopener noreferrer">
+            <SocialLink href="https://www.instagram.com/mylogixstudio/" target="_blank" rel="noopener noreferrer">
                   <i className="fab fa-instagram"></i>
             </SocialLink>
           </SocialLinks>
@@ -118,7 +118,7 @@ const Footer: React.FC = () => {
       
       <Copyright>
         <div className="container">
-          © {new Date().getFullYear()} MyLogic Studio. All rights reserved.
+          © {new Date().getFullYear()} MyLogix Studio. All rights reserved.
         </div>
       </Copyright>
     </FooterContainer>

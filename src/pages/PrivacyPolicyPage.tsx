@@ -89,7 +89,7 @@ const PrivacyPolicyPage: React.FC = () => {
         <LastUpdated>Last updated: April 2025</LastUpdated>
         
         <PolicyText>
-          MyLogic Studio LLC ("we", "our", or "us") operates the ColorCrafter mobile application (the "App"). 
+          MyLogix Studio LLC ("we", "our", or "us") operates the ColorCrafter mobile application (the "App"). 
           This Privacy Policy informs you of our policies regarding the collection, use, and disclosure of personal data 
           when you use our App and the choices you have associated with that data.
         </PolicyText>
@@ -174,7 +174,7 @@ const PrivacyPolicyPage: React.FC = () => {
           If you have any questions about this Privacy Policy or our data practices, please contact us at:
         </PolicyText>
         <ContactInfo>
-          <strong>MyLogic Studio LLC</strong><br />
+          <strong>MyLogix Studio LLC</strong><br />
           Email: mls@mylogicstudio.com
         </ContactInfo>
       </ContentContainer>

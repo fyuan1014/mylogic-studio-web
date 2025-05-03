@@ -207,7 +207,7 @@ const ContactPage: React.FC = () => {
                   <SocialLink href="https://x.com/MylogicStudio" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
                     <i className="fab fa-twitter"></i>
                   </SocialLink>
-                  <SocialLink href="https://www.instagram.com/mylogicstudio/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                  <SocialLink href="https://www.instagram.com/mylogixstudio/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                     <i className="fab fa-instagram"></i>
                   </SocialLink>
                 </SocialLinks>

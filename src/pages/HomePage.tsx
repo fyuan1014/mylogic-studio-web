@@ -91,7 +91,7 @@ const HomePage: React.FC = () => {
     <>
       <Hero
         title="Innovative <span>Technology</span> Solutions for Your Business"
-        subtitle="MyLogic Studio delivers cutting-edge mobile and web applications, digital platforms, and subscription-based services to help businesses thrive in the digital world."
+        subtitle="MyLogix Studio (formerly known as MyLogic Studio) delivers cutting-edge mobile and web applications, digital platforms, and subscription-based services designed to help businesses thrive in the digital world."
         primaryButtonText="Our Services"
         secondaryButtonText="Contact Us"
         onPrimaryClick={() => navigate('/services')}
@@ -122,7 +122,7 @@ const HomePage: React.FC = () => {
       <Section
         background="primary"
         title="Why Choose Us"
-        description="At MyLogic Studio, we blend innovative technology with strategic thinking to create solutions that drive business growth."
+        description="At MyLogix Studio, we blend innovative technology with strategic thinking to create solutions that drive business growth."
       >
         <FeatureGrid>
           <Feature>
@@ -204,7 +204,7 @@ const HomePage: React.FC = () => {
         <CTASection>
           <CTATitle>Ready to Transform Your Business?</CTATitle>
           <CTADescription>
-            Get in touch with our team to discuss how MyLogic Studio can help your business thrive in the digital world.
+            Get in touch with our team to discuss how MyLogix Studio can help your business thrive in the digital world.
           </CTADescription>
           <Button 
             variant="primary" 

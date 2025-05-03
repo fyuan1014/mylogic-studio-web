@@ -257,7 +257,7 @@ const ServicesPage: React.FC = () => {
         <div style={{ textAlign: 'center', color: 'var(--light-text)' }}>
           <h2 style={{ fontSize: '2.5rem', marginBottom: '1.5rem' }}>Ready to Start Your Project?</h2>
           <p style={{ fontSize: '1.25rem', marginBottom: '2rem', maxWidth: '800px', margin: '0 auto 2rem' }}>
-            Contact us today to discuss your project requirements and how MyLogic Studio can help you achieve your goals.
+            Contact us today to discuss your project requirements and how MyLogix Studio can help you achieve your goals.
           </p>
           <Button 
             variant="outline" 

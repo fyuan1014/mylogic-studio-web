@@ -115,8 +115,8 @@ const Header: React.FC = () => {
     <HeaderContainer>
       <NavContainer>
         <Logo to="/">
-          <LogoImage src={`${process.env.PUBLIC_URL}/logo192.png`} alt="MyLogic Studio Logo" />
-          <LogoText>MyLogic<span className="accent">Studio</span></LogoText>
+          <LogoImage src={`${process.env.PUBLIC_URL}/logo192.png`} alt="MyLogix Studio Logo" />
+          <LogoText>MyLogix<span className="accent">Studio</span></LogoText>
         </Logo>
         
         <MenuButton onClick={toggleMenu}>
