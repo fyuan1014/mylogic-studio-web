@@ -185,7 +185,7 @@ const ContactPage: React.FC = () => {
                   <i className="fas fa-envelope"></i>
                   Contact
                 </InfoSubtitle>
-                <InfoText>Email: <InfoLink href="mailto:mls@mylogicstudio.com">info@mylogicstudio.com</InfoLink></InfoText>
+                <InfoText>Email: <InfoLink href="mailto:mls@mylogicstudio.com">mls@mylogicstudio.com</InfoLink></InfoText>
                 <InfoText>Phone: <InfoLink href="tel:+13522160122">(352) 216-0122</InfoLink></InfoText>
               </InfoBlock>
               
