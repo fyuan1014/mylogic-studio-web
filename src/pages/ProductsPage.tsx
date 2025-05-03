@@ -180,7 +180,7 @@ const ProductsPage: React.FC = () => {
 
           <ProductCard>
             <ProductImage>
-              <img src={`${process.env.PUBLIC_URL}/images/products/future-products.jpg`} alt="More to Come" />
+              <img src={`${process.env.PUBLIC_URL}/images/products/future-products-new.jpg`} alt="More to Come" />
             </ProductImage>
             <ProductContent>
               <ProductTitle>More to Come</ProductTitle>
