@@ -65,6 +65,13 @@ const TermsListItem = styled.li`
   line-height: 1.6;
 `;
 
+const ImportantItem = styled.li`
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
+  color: var(--primary-color);
+  font-weight: 500;
+`;
+
 const Disclaimer = styled.div`
   margin: 1.5rem 0;
   padding: 1.5rem;
@@ -145,7 +152,7 @@ const TermsOfServicePage: React.FC = () => {
           <TermsListItem>
             You grant us a non-exclusive, worldwide, royalty-free license to use, process, 
             modify, and store your uploaded images solely for the purpose of providing our 
-            services to you.
+            services to you. Images are not permanently stored after processing is complete.
           </TermsListItem>
           <TermsListItem>
             You are solely responsible for the content of images you upload and must ensure 
@@ -164,6 +171,12 @@ const TermsOfServicePage: React.FC = () => {
             Some features of the App are available only with a paid subscription.
           </TermsListItem>
           <TermsListItem>
+            Subscriptions are processed entirely through Apple's App Store and managed by StoreKit.
+          </TermsListItem>
+          <ImportantItem>
+            We do not collect or store your payment information, as all transactions are handled by Apple.
+          </ImportantItem>
+          <TermsListItem>
             Subscriptions automatically renew unless auto-renew is turned off at least 24 hours 
             before the end of the current period.
           </TermsListItem>
@@ -181,7 +194,26 @@ const TermsOfServicePage: React.FC = () => {
           </TermsListItem>
         </TermsList>
 
-        <TermsTitle>5. Service Limitations</TermsTitle>
+        <TermsTitle>5. Privacy and Data</TermsTitle>
+        <TermsList>
+          <ImportantItem>
+            The App does not require user accounts or registration.
+          </ImportantItem>
+          <ImportantItem>
+            We do not collect personal information such as names or email addresses.
+          </ImportantItem>
+          <TermsListItem>
+            Image data is temporarily processed on our servers but not permanently stored.
+          </TermsListItem>
+          <TermsListItem>
+            App preferences are stored locally on your device.
+          </TermsListItem>
+          <TermsListItem>
+            For complete details about our data practices, please refer to our Privacy Policy.
+          </TermsListItem>
+        </TermsList>
+
+        <TermsTitle>6. Service Limitations</TermsTitle>
         <TermsList>
           <TermsListItem>
             Free tier has limited features and processing capabilities.
@@ -200,7 +232,7 @@ const TermsOfServicePage: React.FC = () => {
           </TermsListItem>
         </TermsList>
 
-        <TermsTitle>6. Intellectual Property</TermsTitle>
+        <TermsTitle>7. Intellectual Property</TermsTitle>
         <TermsList>
           <TermsListItem>
             The App, including all content, features, and functionality, is owned by MyLogix 
@@ -216,7 +248,7 @@ const TermsOfServicePage: React.FC = () => {
           </TermsListItem>
         </TermsList>
 
-        <TermsTitle>7. Disclaimer of Warranties</TermsTitle>
+        <TermsTitle>8. Disclaimer of Warranties</TermsTitle>
         <Disclaimer>
           THE APP IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EITHER 
           EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, IMPLIED WARRANTIES OF MERCHANTABILITY, 
@@ -228,7 +260,7 @@ const TermsOfServicePage: React.FC = () => {
           RESULTS OF USING THE APP WILL MEET YOUR REQUIREMENTS.
         </Disclaimer>
 
-        <TermsTitle>8. Limitation of Liability</TermsTitle>
+        <TermsTitle>9. Limitation of Liability</TermsTitle>
         <Disclaimer>
           IN NO EVENT SHALL MyLogix Studio LLC BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, 
           CONSEQUENTIAL OR PUNITIVE DAMAGES, INCLUDING WITHOUT LIMITATION, LOSS OF PROFITS, DATA, 
@@ -236,7 +268,7 @@ const TermsOfServicePage: React.FC = () => {
           INABILITY TO ACCESS OR USE THE APP.
         </Disclaimer>
 
-        <TermsTitle>9. Governing Law</TermsTitle>
+        <TermsTitle>10. Governing Law</TermsTitle>
         <TermsText>
           These Terms shall be governed by and construed in accordance with the laws of the United 
           States and the State of California, without regard to its conflict of law provisions. Any 
@@ -244,15 +276,14 @@ const TermsOfServicePage: React.FC = () => {
           the exclusive jurisdiction of the state and federal courts located in California.
         </TermsText>
 
-        <TermsTitle>10. Severability</TermsTitle>
+        <TermsTitle>11. Severability</TermsTitle>
         <TermsText>
           If any provision of these Terms is held to be unenforceable or invalid, such provision will 
           be changed and interpreted to accomplish the objectives of such provision to the greatest 
-          extent possible under applicable law and the remaining provisions will continue in full 
-          force and effect.
+          extent possible under applicable law and the remaining provisions will continue in full force and effect.
         </TermsText>
 
-        <TermsTitle>11. Contact Us</TermsTitle>
+        <TermsTitle>12. Contact Us</TermsTitle>
         <TermsText>
           If you have any questions about these Terms of Service, please contact us at:
         </TermsText>

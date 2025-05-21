@@ -65,6 +65,13 @@ const PolicyListItem = styled.li`
   line-height: 1.6;
 `;
 
+const ImportantText = styled.p`
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+  font-weight: 500;
+  color: var(--primary-color);
+`;
+
 const ContactInfo = styled.div`
   margin-top: 2rem;
   padding: 1.5rem;
@@ -90,7 +97,7 @@ const PrivacyPolicyPage: React.FC = () => {
         
         <PolicyText>
           MyLogix Studio LLC ("we", "our", or "us") operates the ColorCrafter mobile application (the "App"). 
-          This Privacy Policy informs you of our policies regarding the collection, use, and disclosure of personal data 
+          This Privacy Policy informs you of our policies regarding the collection, use, and disclosure of data 
           when you use our App and the choices you have associated with that data.
         </PolicyText>
 
@@ -98,32 +105,33 @@ const PrivacyPolicyPage: React.FC = () => {
         <PolicyText>We collect the following types of information:</PolicyText>
         <PolicyList>
           <PolicyListItem>Images you upload for processing</PolicyListItem>
-          <PolicyListItem>Account information (email address for registered users)</PolicyListItem>
-          <PolicyListItem>Usage data (features used, time spent in the app)</PolicyListItem>
+          <PolicyListItem>Usage data (app features used, time spent in the app)</PolicyListItem>
           <PolicyListItem>Device information (device type, OS version)</PolicyListItem>
-          <PolicyListItem>Subscription status and purchase history</PolicyListItem>
-          <PolicyListItem>User preferences and settings</PolicyListItem>
+          <PolicyListItem>Subscription status through Apple's StoreKit</PolicyListItem>
+          <PolicyListItem>App preferences and settings stored locally on your device</PolicyListItem>
         </PolicyList>
+        <ImportantText>
+          We do not collect personal information such as names, email addresses, or maintain user accounts.
+        </ImportantText>
 
         <PolicyTitle>2. How We Use Your Information</PolicyTitle>
         <PolicyText>We use your information to:</PolicyText>
         <PolicyList>
           <PolicyListItem>Process your images and create paint-by-numbers templates</PolicyListItem>
-          <PolicyListItem>Authenticate your identity and manage your account</PolicyListItem>
-          <PolicyListItem>Process transactions and manage subscriptions</PolicyListItem>
-          <PolicyListItem>Personalize your experience and remember preferences</PolicyListItem>
-          <PolicyListItem>Improve our App through analytics and user feedback</PolicyListItem>
-          <PolicyListItem>Communicate with you regarding service updates</PolicyListItem>
-          <PolicyListItem>Protect against fraudulent or unauthorized activity</PolicyListItem>
+          <PolicyListItem>Verify your subscription status via Apple's StoreKit</PolicyListItem>
+          <PolicyListItem>Personalize your experience and store preferences on your device</PolicyListItem>
+          <PolicyListItem>Improve our App through anonymous usage analytics</PolicyListItem>
+          <PolicyListItem>Protect against fraudulent activity</PolicyListItem>
         </PolicyList>
 
         <PolicyTitle>3. Data Storage and Security</PolicyTitle>
         <PolicyList>
           <PolicyListItem>Images are processed on our secure servers and are not permanently stored after processing is complete</PolicyListItem>
-          <PolicyListItem>We implement appropriate technical and organizational measures to protect your personal data</PolicyListItem>
+          <PolicyListItem>We implement appropriate technical measures to protect your data during processing</PolicyListItem>
           <PolicyListItem>We use industry-standard encryption for data transmission</PolicyListItem>
-          <PolicyListItem>Your subscription data is handled securely through Apple's StoreKit</PolicyListItem>
-          <PolicyListItem>We retain your data only as long as necessary to provide services to you</PolicyListItem>
+          <PolicyListItem>Your subscription data is handled entirely by Apple through StoreKit</PolicyListItem>
+          <PolicyListItem>No user account database is maintained</PolicyListItem>
+          <PolicyListItem>App preferences are stored locally on your device</PolicyListItem>
         </PolicyList>
 
         <PolicyTitle>4. Third-Party Services</PolicyTitle>
@@ -132,34 +140,28 @@ const PrivacyPolicyPage: React.FC = () => {
           <PolicyListItem>Apple App Store for distribution and payments</PolicyListItem>
           <PolicyListItem>Apple StoreKit for subscription management</PolicyListItem>
           <PolicyListItem>Heroku for server hosting and image processing</PolicyListItem>
-          <PolicyListItem>PostgreSQL for database storage</PolicyListItem>
         </PolicyList>
         <PolicyText>
-          Each third-party service has its own Privacy Policy governing how they handle your data. 
+          Each third-party service has its own Privacy Policy governing how they handle data. 
           We recommend reviewing their policies as well.
         </PolicyText>
 
         <PolicyTitle>5. Your Legal Rights</PolicyTitle>
-        <PolicyText>Depending on your location, you may have certain rights regarding your personal information:</PolicyText>
-        <PolicyList>
-          <PolicyListItem>Right to Access: You can request copies of your personal data.</PolicyListItem>
-          <PolicyListItem>Right to Rectification: You can request that we correct inaccurate information.</PolicyListItem>
-          <PolicyListItem>Right to Erasure: You can request that we delete your personal data.</PolicyListItem>
-          <PolicyListItem>Right to Restrict Processing: You can request that we restrict processing of your data.</PolicyListItem>
-          <PolicyListItem>Right to Data Portability: You can request transfer of your data.</PolicyListItem>
-          <PolicyListItem>Right to Object: You can object to our processing of your personal data.</PolicyListItem>
-        </PolicyList>
         <PolicyText>
-          California Residents: Under the California Consumer Privacy Act (CCPA), California residents have specific 
-          rights regarding personal information. You have the right to know what personal information we collect, 
-          disclose, or sell, and the right to request deletion of personal information.
+          Since we don't collect or store personal information, most data privacy rights regarding data access, 
+          modification, or deletion don't apply directly. However, you still have the right to:
         </PolicyText>
+        <PolicyList>
+          <PolicyListItem>Delete the app and all locally stored preferences</PolicyListItem>
+          <PolicyListItem>Manage your subscription through your Apple ID account settings</PolicyListItem>
+          <PolicyListItem>Request that any of your images in processing be deleted</PolicyListItem>
+        </PolicyList>
 
         <PolicyTitle>6. Children's Privacy</PolicyTitle>
         <PolicyText>
-          Our App is not intended for use by children under the age of 13. We do not knowingly collect 
-          personally identifiable information from children under 13. If you are a parent or guardian 
-          and you are aware that your child has provided us with personal data, please contact us.
+          Our App is not intended for use by children under the age of 17. We do not knowingly collect information 
+          from children under 17. The app is accessible without creating accounts, and Apple's family controls can 
+          be used to manage access to the app and prevent in-app purchases.
         </PolicyText>
 
         <PolicyTitle>7. Changes to This Privacy Policy</PolicyTitle>
