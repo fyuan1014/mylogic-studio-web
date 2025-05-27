@@ -164,7 +164,7 @@ const ProductsPage: React.FC = () => {
               <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
                 <Button 
                   variant="primary"
-                  onClick={() => window.open('https://apps.apple.com', '_blank')}
+                  onClick={() => window.open('https://apps.apple.com/us/app/colorcrafter-paint-by-numbers/id6745644936', '_blank')}
                 >
                   Download on App Store
                 </Button>
