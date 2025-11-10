@@ -130,7 +130,7 @@ const NarrativeFlowLegalPage: React.FC = () => {
             production workflow from concept to completion.
           </AppDescription>
           <AppImage
-            src={`${process.env.PUBLIC_URL}/images/products/future-products-new.jpg`}
+            src={`${process.env.PUBLIC_URL}/images/products/narrativeflow.png`}
             alt="NarrativeFlow App"
           />
           <AppDescription>
