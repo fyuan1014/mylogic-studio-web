@@ -101,6 +101,7 @@ const Footer: React.FC = () => {
         <FooterSection>
           <FooterTitle>Legal</FooterTitle>
           <FooterLink to="/colorcrafter/legal">ColorCrafter Legal Docs</FooterLink>
+          <FooterLink to="/narrativeflow/legal">NarrativeFlow Legal Docs</FooterLink>
         </FooterSection>
         
         <FooterSection>
