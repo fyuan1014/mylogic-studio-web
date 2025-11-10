@@ -15,6 +15,9 @@ import AboutPage from './pages/AboutPage';
 import ColorCrafterLegalPage from './pages/ColorCrafterLegalPage';
 import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
 import TermsOfServicePage from './pages/TermsOfServicePage';
+import NarrativeFlowLegalPage from './pages/NarrativeFlowLegalPage';
+import NarrativeFlowPrivacyPolicyPage from './pages/NarrativeFlowPrivacyPolicyPage';
+import NarrativeFlowTermsOfServicePage from './pages/NarrativeFlowTermsOfServicePage';
 
 const AppContainer = styled.div`
   display: flex;
@@ -42,6 +45,11 @@ function App() {
           <Route path="/colorcrafter/legal" element={<ColorCrafterLegalPage />} />
           <Route path="/colorcrafter/privacy-policy" element={<PrivacyPolicyPage />} />
           <Route path="/colorcrafter/terms-of-service" element={<TermsOfServicePage />} />
+
+          {/* NarrativeFlow Legal Pages */}
+          <Route path="/narrativeflow/legal" element={<NarrativeFlowLegalPage />} />
+          <Route path="/narrativeflow/privacy-policy" element={<NarrativeFlowPrivacyPolicyPage />} />
+          <Route path="/narrativeflow/terms-of-service" element={<NarrativeFlowTermsOfServicePage />} />
         </Routes>
       </Main>
       <Footer />
