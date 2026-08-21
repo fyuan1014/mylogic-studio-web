@@ -1,238 +1,45 @@
-import React from 'react';
-import styled from 'styled-components';
-import { useNavigate } from 'react-router-dom';
-import Section from '../components/Section';
-import Button from '../components/Button';
+import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
-const ProductHeader = styled.div`
-  text-align: center;
-  padding: 8rem 0 4rem;
-  background-color: var(--dark-background);
-  color: var(--light-text);
-`;
-
-const HeaderTitle = styled.h1`
-  font-size: 3rem;
-  margin-bottom: 1.5rem;
-  
-  @media (max-width: 768px) {
-    font-size: 2.5rem;
-  }
-`;
-
-const HeaderDescription = styled.p`
-  font-size: 1.25rem;
-  max-width: 800px;
-  margin: 0 auto;
-  
-  @media (max-width: 768px) {
-    font-size: 1.125rem;
-  }
-`;
-
-const ProductContent = styled.div`
-  padding: 1.5rem;
-  
-  @media (max-width: 992px) {
-    order: 2;
-  }
-`;
-
-const ProductImage = styled.div`
-  @media (max-width: 992px) {
-    order: 1;
-  }
-  
-  img {
-    width: 100%;
-    border-radius: var(--border-radius);
-    box-shadow: var(--box-shadow);
-  }
-`;
-
-const ProductTitle = styled.h2`
-  font-size: 2.25rem;
-  margin-bottom: 1.5rem;
-  
-  @media (max-width: 768px) {
-    font-size: 1.875rem;
-  }
-`;
-
-const ProductDescription = styled.p`
-  font-size: 1.125rem;
-  margin-bottom: 1.5rem;
-  color: var(--gray-text);
-  
-  @media (max-width: 768px) {
-    font-size: 1rem;
-  }
-`;
-
-const ProductFeatures = styled.ul`
-  margin: 1.5rem 0;
-  padding-left: 1.5rem;
-`;
-
-const ProductGrid = styled.div`
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  margin-top: 3rem;
-  
-  @media (max-width: 992px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  
-  @media (max-width: 576px) {
-    grid-template-columns: 1fr;
-  }
-`;
-
-const ProductCard = styled.div`
-  background-color: var(--background-color);
-  border-radius: var(--border-radius);
-  box-shadow: var(--box-shadow);
-  overflow: hidden;
-  transition: var(--transition);
-  
-  &:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-  }
-`;
-
-const FeatureItem = styled.li`
-  margin-bottom: 0.75rem;
-  font-size: 1.125rem;
-  
-  @media (max-width: 768px) {
-    font-size: 1rem;
-  }
-`;
-
-const FeatureIcon = styled.span`
-  margin-right: 0.5rem;
-`;
+const palette = ['#1e2744', '#516268', '#9d5540', '#b1aa73', '#d3cbc0'];
 
 const ProductsPage: React.FC = () => {
-  const navigate = useNavigate();
-  
-  return (
-    <>
-      <ProductHeader>
-        <div className="container">
-          <HeaderTitle>Our Products</HeaderTitle>
-          <HeaderDescription>
-            Discover innovative solutions designed to transform your business and enhance your digital presence.
-          </HeaderDescription>
-        </div>
-      </ProductHeader>
-      
-      <Section
-        title="Our Products"
-        description="Discover our innovative digital solutions that help businesses thrive in the digital world."
-      >
-        <ProductGrid>
-          <ProductCard id="ColorCrafter">
-            <ProductImage>
-              <img src={`${process.env.PUBLIC_URL}/images/products/colorcrafter.jpg`} alt="ColorCrafter App" />
-            </ProductImage>
-            <ProductContent>
-              <ProductTitle>ColorCrafter APP</ProductTitle>
-              <ProductDescription>
-                An iOS based APP allows users to create their own paint by number art work with their own images, which allows you to create an art work for your loved ones, pets, or even yourself.
-              </ProductDescription>
-              <ProductFeatures>
-                <FeatureItem>
-                  <FeatureIcon>🎨</FeatureIcon>
-                  <span>Create custom paint by number artwork</span>
-                </FeatureItem>
-                <FeatureItem>
-                  <FeatureIcon>📱</FeatureIcon>
-                  <span>iOS native application</span>
-                </FeatureItem>
-                <FeatureItem>
-                  <FeatureIcon>🖼️</FeatureIcon>
-                  <span>Use your own images</span>
-                </FeatureItem>
-                <FeatureItem>
-                  <FeatureIcon>🎯</FeatureIcon>
-                  <span>Perfect for gifts and personal projects</span>
-                </FeatureItem>
-              </ProductFeatures>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
-                <Button 
-                  variant="primary"
-                  onClick={() => window.open('https://apps.apple.com/us/app/colorcrafter-paint-by-numbers/id6745644936', '_blank')}
-                >
-                  Download on App Store
-                </Button>
-                <Button 
-                  variant="text"
-                  onClick={() => navigate('/colorcrafter/legal')}
-                >
-                  View Legal Documents
-                </Button>
-              </div>
-            </ProductContent>
-          </ProductCard>
+  useEffect(() => {
+    document.title = 'Products | MyLogix Studio';
+  }, []);
 
-          <ProductCard>
-            <ProductImage>
-              <img src={`${process.env.PUBLIC_URL}/images/products/future-products-new.jpg`} alt="More to Come" />
-            </ProductImage>
-            <ProductContent>
-              <ProductTitle>More to Come</ProductTitle>
-              <ProductDescription>
-                We're constantly developing new innovative solutions to help businesses thrive in the digital world. Stay tuned for more exciting products!
-              </ProductDescription>
-              <ProductFeatures>
-                <FeatureItem>
-                  <FeatureIcon>🚀</FeatureIcon>
-                  <span>Innovative solutions</span>
-                </FeatureItem>
-                <FeatureItem>
-                  <FeatureIcon>💡</FeatureIcon>
-                  <span>Cutting-edge technology</span>
-                </FeatureItem>
-                <FeatureItem>
-                  <FeatureIcon>🎯</FeatureIcon>
-                  <span>Business-focused</span>
-                </FeatureItem>
-                <FeatureItem>
-                  <FeatureIcon>🌟</FeatureIcon>
-                  <span>User-friendly design</span>
-                </FeatureItem>
-              </ProductFeatures>
-              <Button 
-                variant="outline"
-                onClick={() => navigate('/contact')}
-              >
-                Stay Updated
-              </Button>
-            </ProductContent>
-          </ProductCard>
-        </ProductGrid>
-      </Section>
-      
-      <Section background="gradient">
-        <div style={{ textAlign: 'center', color: 'var(--light-text)' }}>
-          <h2 style={{ fontSize: '2.5rem', marginBottom: '1.5rem' }}>Ready to Transform Your Business?</h2>
-          <p style={{ fontSize: '1.25rem', marginBottom: '2rem', maxWidth: '800px', margin: '0 auto 2rem' }}>
-            Contact us today to learn more about our products and how they can benefit your business.
-          </p>
-          <Button 
-            variant="outline" 
-            size="large" 
-            onClick={() => navigate('/contact')}
-          >
-            Contact Us
-          </Button>
+  return (
+    <div className="products-page">
+      <section className="page-hero" aria-labelledby="products-title"><div className="site-shell page-hero-grid"><div><p className="eyebrow">Products</p><h1 id="products-title">Creative tools made understandable.</h1></div><p>Our products show how MyLogix Studio carries an idea through interface design, backend processing, release, and support.</p></div></section>
+
+      <section className="section product-section" id="colorcrafter" aria-labelledby="colorcrafter-title">
+        <div className="site-shell product-grid">
+          <div className="product-visual">
+            <div className="product-window product-window-original"><div className="window-bar"><span>Original</span><span>01</span></div><img src="/images/products/dance-original.jpg" width="960" height="1822" loading="lazy" alt="Renoir's Dance at Bougival before paint-by-number processing" /></div>
+            <div className="product-window product-window-result"><div className="window-bar"><span>Color Map</span><span>02</span></div><img src="/images/products/dance-color-map.png" width="960" height="1822" loading="lazy" alt="Dance at Bougival transformed into a simplified ColorCrafter color map" /></div>
+            <div className="palette-rack" aria-label="Sample ColorCrafter palette">{palette.map(color => <span key={color} style={{ backgroundColor: color }} />)}</div>
+          </div>
+          <div className="product-copy"><p className="eyebrow">Product 01</p><h2 id="colorcrafter-title">ColorCrafter turns personal photos into art you can make by hand.</h2><p>Choose a photo, simplify it into numbered color regions, and create a printable project or explore the finished colors digitally.</p><dl className="product-facts"><div><dt>Input</dt><dd>Your Own Photo</dd></div><div><dt>Output</dt><dd>Printable Numbered Art</dd></div><div><dt>Platform</dt><dd>iPhone & iPad</dd></div></dl><div className="button-row"><a className="button button-ink" href="https://apps.apple.com/us/app/colorcrafter-paint-by-numbers/id6745644936" target="_blank" rel="noopener noreferrer">View on the App Store <span aria-hidden="true">↗</span></a><a className="text-link" href="#colorcrafter-demo">See the Process</a></div><Link className="legal-inline-link" to="/colorcrafter/legal">ColorCrafter Legal Documents</Link></div>
         </div>
-      </Section>
-    </>
+      </section>
+
+      <section className="section colorcrafter-demo-section" id="colorcrafter-demo" aria-labelledby="demo-title">
+        <div className="site-shell">
+          <div className="demo-intro"><p className="eyebrow">From Photo to Palette</p><h2 id="demo-title">See the transformation without uploading a photo.</h2><p>This visual walkthrough shows the core ColorCrafter flow: start with an image, divide it into paintable regions, then refill the regions with a simplified palette.</p></div>
+          <figure className="process-demo" aria-describedby="demo-caption">
+            <div className="demo-stage"><div className="demo-stage-bar"><span>Original Photo</span><span>01</span></div><div className="demo-image-frame"><img src="/images/products/dance-original.jpg" width="960" height="1822" loading="lazy" alt="Original photograph before ColorCrafter processing" /></div><p>Begin with a meaningful image.</p></div>
+            <div className="demo-arrow" aria-hidden="true"><span>→</span><small>Segment</small></div>
+            <div className="demo-stage demo-stage-segmented"><div className="demo-stage-bar"><span>Numbered Regions</span><span>02</span></div><div className="demo-image-frame"><img src="/images/products/dance-color-map.png" width="960" height="1822" loading="lazy" alt="Simplified artwork divided into paintable regions" /><div className="segment-grid" aria-hidden="true"><span style={{ left: '27%', top: '19%' }}>3</span><span style={{ left: '62%', top: '27%' }}>7</span><span style={{ left: '42%', top: '48%' }}>2</span><span style={{ left: '70%', top: '63%' }}>5</span><span style={{ left: '31%', top: '77%' }}>8</span></div></div><p>Reduce detail into clear color regions.</p></div>
+            <div className="demo-arrow" aria-hidden="true"><span>→</span><small>Refill</small></div>
+            <div className="demo-stage demo-stage-refilled"><div className="demo-stage-bar"><span>Refilled Preview</span><span>03</span></div><div className="demo-image-frame"><img src="/images/products/dance-color-map.png" width="960" height="1822" loading="lazy" alt="ColorCrafter preview refilled with a simplified color palette" /><div className="demo-swatch-row" aria-hidden="true">{palette.map(color => <span key={color} style={{ backgroundColor: color }} />)}</div></div><p>Preview the palette before painting.</p></div>
+            <figcaption id="demo-caption">A representative ColorCrafter transformation using a sample image. No upload, account, or login is required.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section className="section secondary-product-section" id="narrativeflow" aria-labelledby="narrativeflow-title"><div className="site-shell secondary-product-card"><div><p className="eyebrow">Product 02</p><h2 id="narrativeflow-title">NarrativeFlow brings images, narration, and video assembly into one creative flow.</h2></div><div><p>NarrativeFlow combines AI-assisted image creation and editing, multilingual voice synthesis, and scene compilation for creators, educators, and businesses.</p><Link className="text-link" to="/narrativeflow/legal">NarrativeFlow Legal Documents <span aria-hidden="true">↗</span></Link></div></div></section>
+    </div>
   );
 };
 
-export default ProductsPage; 
+export default ProductsPage;
