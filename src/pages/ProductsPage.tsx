@@ -38,6 +38,25 @@ const ProductsPage: React.FC = () => {
       </section>
 
       <section className="section secondary-product-section" id="narrativeflow" aria-labelledby="narrativeflow-title"><div className="site-shell secondary-product-card"><div><p className="eyebrow">Product 02</p><h2 id="narrativeflow-title">NarrativeFlow brings images, narration, and video assembly into one creative flow.</h2></div><div><p>NarrativeFlow combines AI-assisted image creation and editing, multilingual voice synthesis, and scene compilation for creators, educators, and businesses.</p><Link className="text-link" to="/narrativeflow/legal">NarrativeFlow Legal Documents <span aria-hidden="true">↗</span></Link></div></div></section>
+
+      <section className="section tickercase-section" id="tickercase" aria-labelledby="tickercase-title">
+        <div className="site-shell tickercase-card">
+          <div className="tickercase-visual" aria-label="TickerCase claim-to-expectations workflow">
+            <div className="tickercase-claim"><span>Claim</span><strong>NBIS will increase 100% in 12 months.</strong></div>
+            <div className="tickercase-bridge" aria-hidden="true">
+              <div><span>Current value</span><strong>$X</strong></div><i>→</i><div><span>Target value</span><strong>$2X</strong></div><i>→</i><div><span>Required result</span><strong>Revenue + multiple</strong></div>
+            </div>
+            <div className="tickercase-checks"><span>Evidence</span><span>Expectations</span><span>Checkpoints</span></div>
+          </div>
+          <div className="tickercase-copy">
+            <p className="eyebrow">Product 03 · From hype to math</p>
+            <h2 id="tickercase-title">TickerCase turns a stock prediction into a case you can test.</h2>
+            <p>Paste any stock claim. See what the price requires, what must happen, and when the case breaks—grounded in current pricing, company filings, and dated checkpoints.</p>
+            <dl className="tickercase-facts"><div><dt>Input</dt><dd>One stock claim</dd></div><div><dt>Output</dt><dd>Evidence + required results</dd></div><div><dt>Review</dt><dd>Dated pass/fail checks</dd></div></dl>
+            <a className="button button-ink" href="https://tickercase.mylogicstudio.com">Open TickerCase <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
