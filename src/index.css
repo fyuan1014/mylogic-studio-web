@@ -487,8 +487,7 @@ select:hover, input[type="text"]:hover { border-color: var(--blue); }
     .tickercase-bridge { grid-template-columns: 1fr; }
     .tickercase-bridge { gap: 10px; border: 0; background: transparent; }
     .tickercase-bridge div { border: 1px solid #cfd8d4; }
-    .tickercase-bridge i { min-height: 22px; padding: 0; background: transparent; transform: none; font-size: 0; }
-    .tickercase-bridge i::before { content: "↓"; color: #9d5540; font: 600 1.3rem/1 var(--display); }
+    .tickercase-bridge i { display: none; }
     .tickercase-checks { grid-template-columns: 1fr; }
     .approach-grid { gap: 50px; }
     .process-list li { grid-template-columns: 42px 1fr; gap: 14px; }
