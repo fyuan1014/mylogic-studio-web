@@ -482,8 +482,13 @@ select:hover, input[type="text"]:hover { border-color: var(--blue); }
     .product-facts { grid-template-columns: 1fr; }
     .product-facts div, .product-facts div + div { padding: 15px 0; border-left: 0; }
     .product-facts div + div { border-top: 1px solid rgba(255, 255, 255, 0.18); }
+    .tickercase-visual { padding: 0; border: 0; border-radius: 0; background: transparent; box-shadow: none; }
+    .tickercase-claim { padding: 18px; border: 1px solid #afbfba; border-left: 4px solid #9d5540; background: #f7faf8; }
     .tickercase-bridge { grid-template-columns: 1fr; }
-    .tickercase-bridge i { min-height: 24px; transform: rotate(90deg); }
+    .tickercase-bridge { gap: 10px; border: 0; background: transparent; }
+    .tickercase-bridge div { border: 1px solid #cfd8d4; }
+    .tickercase-bridge i { min-height: 22px; padding: 0; background: transparent; transform: none; font-size: 0; }
+    .tickercase-bridge i::before { content: "↓"; color: #9d5540; font: 600 1.3rem/1 var(--display); }
     .tickercase-checks { grid-template-columns: 1fr; }
     .approach-grid { gap: 50px; }
     .process-list li { grid-template-columns: 42px 1fr; gap: 14px; }
