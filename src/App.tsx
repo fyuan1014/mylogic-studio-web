@@ -40,6 +40,8 @@ function App() {
           <Route path="/colorcrafter/legal" element={<ColorCrafterLegalPage />} />
           <Route path="/colorcrafter/privacy-policy" element={<PrivacyPolicyPage />} />
           <Route path="/colorcrafter/terms-of-service" element={<TermsOfServicePage />} />
+          <Route path="/colorcrafter/:locale/privacy-policy" element={<PrivacyPolicyPage />} />
+          <Route path="/colorcrafter/:locale/terms-of-service" element={<TermsOfServicePage />} />
           <Route path="/narrativeflow/legal" element={<NarrativeFlowLegalPage />} />
           <Route path="/narrativeflow/privacy-policy" element={<NarrativeFlowPrivacyPolicyPage />} />
           <Route path="/narrativeflow/terms-of-service" element={<NarrativeFlowTermsOfServicePage />} />
