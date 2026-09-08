@@ -30,4 +30,17 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url><loc>https://www.mylogicstudio.com/colorcrafter/legal</loc></url>
+  <url><loc>https://www.mylogicstudio.com/colorcrafter/privacy-policy</loc></url>
+  <url><loc>https://www.mylogicstudio.com/colorcrafter/terms-of-service</loc></url>
+  <url><loc>https://www.mylogicstudio.com/colorcrafter/zh-hans/privacy-policy</loc></url>
+  <url><loc>https://www.mylogicstudio.com/colorcrafter/zh-hans/terms-of-service</loc></url>
+  <url><loc>https://www.mylogicstudio.com/colorcrafter/zh-hant/privacy-policy</loc></url>
+  <url><loc>https://www.mylogicstudio.com/colorcrafter/zh-hant/terms-of-service</loc></url>
+  <url><loc>https://www.mylogicstudio.com/colorcrafter/de/privacy-policy</loc></url>
+  <url><loc>https://www.mylogicstudio.com/colorcrafter/de/terms-of-service</loc></url>
+  <url><loc>https://www.mylogicstudio.com/colorcrafter/es/privacy-policy</loc></url>
+  <url><loc>https://www.mylogicstudio.com/colorcrafter/es/terms-of-service</loc></url>
+  <url><loc>https://www.mylogicstudio.com/colorcrafter/fr/privacy-policy</loc></url>
+  <url><loc>https://www.mylogicstudio.com/colorcrafter/fr/terms-of-service</loc></url>
 </urlset> 
