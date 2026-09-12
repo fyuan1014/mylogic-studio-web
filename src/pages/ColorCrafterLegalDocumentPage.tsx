@@ -37,7 +37,8 @@ const privacySections: LegalSection[] = [
       'Photos you choose are sent to our image-processing service together with the number of colors, detail level, and resolution you select. We do not access other photos in your library.',
       'Our service receives limited technical information needed to fulfill and protect a request, such as IP address, iOS version, app version, request time, and error information.',
       'Apple provides subscription products and entitlement status through StoreKit. We do not receive or store your full payment-card information.',
-      'Language, creation limits, subscription status, and app preferences are stored locally on your device. If you email support, we receive the email address and information you voluntarily include.',
+      'Language, creation limits, subscription status, privacy choices, and app preferences are stored locally on your device. If you email support, we receive the email address and information you voluntarily include.',
+      'If you enable advertising measurement, the Meta SDK may process limited device and app information and the app events described below. It does not receive your selected photos or generated artwork.',
     ],
   },
   {
@@ -51,22 +52,25 @@ const privacySections: LegalSection[] = [
   {
     title: '3. How we use information',
     paragraphs: [
-      'We use information to create and return your artwork, enable interactive coloring, provide subscriptions and free-use limits, remember your preferences, troubleshoot failures, secure the service, and comply with legal obligations.',
+      'We use information to create and return your artwork, enable interactive coloring, provide subscriptions and free-use limits, remember your preferences, troubleshoot failures, secure the service, measure advertising performance when you consent, and comply with legal obligations.',
       'We do not sell personal information. We do not use your information for cross-app behavioral advertising.',
     ],
   },
   {
     title: '4. Advertising measurement and tracking',
     paragraphs: [
-      'The current version of ColorCrafter does not include the Meta SDK, does not access the IDFA, does not request App Tracking Transparency permission, and does not track you across apps or websites owned by other companies.',
-      'ColorCrafter uses Apple technologies such as AdAttributionKit and SKAdNetwork to report privacy-preserving conversion milestones for first launch, successful artwork creation, saving, and subscription activation. Apple may send delayed, aggregated postbacks to an eligible advertising network. These postbacks do not include your photos and do not permit us to identify you across other companies’ apps and websites.',
-      'If a future release adds Meta App Events or another analytics or advertising SDK, we will review its data flows and privacy manifest, update this Policy and our App Store privacy disclosures before release, and request ATT permission if Apple’s rules require it.',
+      'ColorCrafter includes Meta App Events for advertising attribution and campaign measurement. It is disabled until you choose to enable measurement in the App. We send only a limited set of events: app activation, successful artwork creation, saving artwork, and subscription activation. We do not send photos, filenames, palettes, canvas contents, or artwork previews to Meta.',
+      'If you enable measurement, ColorCrafter asks for Apple’s App Tracking Transparency permission. The advertising identifier (IDFA) is available to Meta only if you grant that system permission. If you decline ATT, the SDK is configured for limited data use without IDFA. You can decline measurement entirely and still use the App.',
+      'Meta may process app and device information, event timestamps, IP or network information, and SDK identifiers to provide attribution and analytics under Meta’s privacy terms. Depending on your ATT choice, Meta may use information to measure activity across apps and websites owned by other companies.',
+      'ColorCrafter also uses Apple technologies such as AdAttributionKit and SKAdNetwork for privacy-preserving attribution. Apple may send delayed or aggregated postbacks to an eligible advertising network. Attribution events never contain your photos.',
+      'You can stop future Meta event logging in Settings > Privacy Choices and manage ATT permission in iOS Settings. Changing these choices does not automatically delete data Meta previously received; requests concerning that data are governed by Meta’s privacy policy.',
     ],
   },
   {
     title: '5. Service providers and disclosures',
     paragraphs: [
       'Apple provides App Store distribution, in-app purchases, StoreKit subscriptions, photo-library permissions, and privacy-preserving attribution services.',
+      'Meta provides consent-controlled advertising attribution and app-event measurement. Meta processes information under its own privacy terms.',
       'Our image-processing service is hosted using Heroku, a Salesforce service. These providers process information on our behalf under their own privacy and security terms.',
       'We may disclose information when required by law, to protect users or the service, or as part of a business transfer. We do not disclose uploaded photo content to data brokers or advertising networks.',
     ],
@@ -145,7 +149,8 @@ const termsSections: LegalSection[] = [
     title: '5. Privacy',
     paragraphs: [
       'Our Privacy Policy explains how selected photos, short-lived processing sessions, device and app information, local preferences, support communications, and StoreKit subscription status are handled.',
-      'The current version does not use IDFA or cross-app tracking. Any future advertising or analytics integration must remain subject to the Privacy Policy, Apple’s requirements, and any consent required by law.',
+      'ColorCrafter uses Apple attribution services and, only when you enable advertising measurement, Meta App Events. We send limited app events for attribution and analytics but never send your selected photos or generated artwork to Meta.',
+      'If you enable Meta measurement, the App may request Apple’s App Tracking Transparency permission. You may decline or later disable future Meta event logging without losing access to the App, subject to the Privacy Policy and Apple’s settings.',
     ],
   },
   {
@@ -198,18 +203,18 @@ const termsSections: LegalSection[] = [
 const pageContent = {
   privacy: {
     title: 'Privacy Policy',
-    updated: 'Effective September 6, 2026',
+    updated: 'Effective September 12, 2026',
     introduction: 'This Policy explains how MyLogix Studio LLC handles information when you use the ColorCrafter mobile app.',
     highlights: [
       'App Store age rating: 4+',
       'Photos are processed for your requested artwork, not advertising',
-      'Aggregated Apple attribution with no IDFA or cross-app tracking',
+      'Consent-controlled Meta App Events and Apple attribution',
     ],
     sections: privacySections,
   },
   terms: {
     title: 'Terms of Service',
-    updated: 'Effective September 5, 2026',
+    updated: 'Effective September 12, 2026',
     introduction: 'These Terms govern your use of the ColorCrafter mobile app and its image-processing and subscription features.',
     highlights: [
       'Rated 4+; minors use ColorCrafter with a parent or guardian',
@@ -287,6 +292,7 @@ const ColorCrafterLegalDocumentPage: React.FC<{ kind: ColorCrafterLegalKind }> =
           <section className="legal-third-parties">
             <h2>{translate('Third-party privacy information')}</h2>
             <p><a href="https://www.apple.com/legal/privacy/">{translate('Apple Privacy Policy')}</a></p>
+            <p><a href="https://www.facebook.com/privacy/policy/">{translate('Meta Privacy Policy')}</a></p>
             <p><a href="https://www.salesforce.com/company/privacy/">{translate('Salesforce Privacy Statement (Heroku)')}</a></p>
           </section>
         )}
