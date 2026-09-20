@@ -57,6 +57,27 @@ const ProductsPage: React.FC = () => {
           </div>
         </div>
       </section>
+
+      <section className="section stemmoire-section" id="stemmoire" aria-labelledby="stemmoire-title">
+        <div className="site-shell stemmoire-card">
+          <div className="stemmoire-copy">
+            <p className="eyebrow">Product 04 · Flowers, art & memory</p>
+            <h2 id="stemmoire-title">Stemmoire turns the flowers you have into a direction you can make.</h2>
+            <p>Start with everyday flowers, a favorite artwork, or a bouquet you imagine. Stemmoire develops a realistic floral direction, then keeps the result in a private archive so each saved design can inform what comes next.</p>
+            <dl className="stemmoire-facts"><div><dt>Begin with</dt><dd>Flowers or art</dd></div><div><dt>Create</dt><dd>A buildable direction</dd></div><div><dt>Remember</dt><dd>Your private archive</dd></div></dl>
+            <a className="button stemmoire-button" href="https://stemmoire.mylogicstudio.com">Open Stemmoire <span aria-hidden="true">↗</span></a>
+          </div>
+          <div className="stemmoire-visual" aria-label="Flowers become a bouquet direction and a saved memory">
+            <div className="stemmoire-notes" aria-hidden="true"><span>Tulip</span><span>Hydrangea</span><span>Airy</span><span>Ivory + green</span></div>
+            <div className="stemmoire-bouquet" aria-hidden="true">
+              <i className="flower flower-one" /><i className="flower flower-two" /><i className="flower flower-three" /><i className="flower flower-four" /><i className="flower flower-five" />
+              <i className="stem stem-one" /><i className="stem stem-two" /><i className="stem stem-three" /><i className="stem stem-four" /><i className="stem stem-five" />
+              <b className="stemmoire-ribbon" />
+            </div>
+            <div className="stemmoire-archive-note"><span>Saved direction</span><strong>Garden light · No. 014</strong><small>Palette, flowers, form and source remembered</small></div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
