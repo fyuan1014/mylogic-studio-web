@@ -63,9 +63,16 @@ const ProductsPage: React.FC = () => {
           <div className="stemmoire-copy">
             <p className="eyebrow">Product 04 · Flowers, art & memory</p>
             <h2 id="stemmoire-title">Stemmoire turns the flowers you have into a direction you can make.</h2>
-            <p>Start with everyday flowers, a favorite artwork, or a bouquet you imagine. Stemmoire develops a realistic floral direction, then keeps the result in a private archive so each saved design can inform what comes next.</p>
+            <p>Stemmoire is an AI floral design and virtual flower-arranging application. Start with everyday flowers, a favorite artwork, or a bouquet you imagine; create a realistic, buildable direction; then save the result in a private archive so each design can inform what comes next.</p>
             <dl className="stemmoire-facts"><div><dt>Begin with</dt><dd>Flowers or art</dd></div><div><dt>Create</dt><dd>A buildable direction</dd></div><div><dt>Remember</dt><dd>Your private archive</dd></div></dl>
-            <a className="button stemmoire-button" href="https://stemmoire.mylogicstudio.com">Open Stemmoire <span aria-hidden="true">↗</span></a>
+            <div className="stemmoire-actions">
+              <a className="button stemmoire-button" href="https://stemmoire.mylogicstudio.com">Open Stemmoire <span aria-hidden="true">↗</span></a>
+              <nav className="stemmoire-deep-links" aria-label="Explore Stemmoire tools">
+                <a href="https://stemmoire.mylogicstudio.com/design">Design a bouquet</a>
+                <a href="https://stemmoire.mylogicstudio.com/arrange">Arrange flowers online</a>
+                <a href="https://stemmoire.mylogicstudio.com/art">Explore art-inspired bouquets</a>
+              </nav>
+            </div>
           </div>
           <div className="stemmoire-visual" aria-label="Flowers become a bouquet direction and a saved memory">
             <div className="stemmoire-notes" aria-hidden="true"><span>Tulip</span><span>Hydrangea</span><span>Airy</span><span>Ivory + green</span></div>

@@ -1,0 +1,19 @@
+# MyLogix Studio
+
+MyLogix Studio LLC designs and develops focused websites, web applications, mobile applications, and data products.
+
+## Products
+
+- [Stemmoire](https://stemmoire.mylogicstudio.com/): An AI floral design and virtual flower-arranging application that helps people turn everyday flowers, art, or saved inspiration into realistic, buildable bouquet directions.
+  - [Design a bouquet](https://stemmoire.mylogicstudio.com/design)
+  - [Arrange flowers online](https://stemmoire.mylogicstudio.com/arrange)
+  - [Explore art-inspired bouquets](https://stemmoire.mylogicstudio.com/art)
+- [TickerCase](https://tickercase.mylogicstudio.com/): A tool for translating stock predictions into evidence, required results, and dated checkpoints.
+- [ColorCrafter](https://www.mylogicstudio.com/products#colorcrafter): A mobile product that turns personal photos into printable numbered artwork.
+
+## Official pages
+
+- [Products](https://www.mylogicstudio.com/products)
+- [Services](https://www.mylogicstudio.com/services)
+- [About](https://www.mylogicstudio.com/about)
+- [Contact](https://www.mylogicstudio.com/contact)

@@ -365,6 +365,10 @@ select:hover, input[type="text"]:hover { border-color: var(--blue); }
 .stemmoire-facts dd { margin: 0; color: #23372b; font-weight: 650; line-height: 1.35; }
 .stemmoire-button { background: #284735; color: #f6f2e8; }
 .stemmoire-button:hover { background: #193225; color: #fffdf8; }
+.stemmoire-actions { display: flex; align-items: flex-start; flex-wrap: wrap; gap: 18px 26px; }
+.stemmoire-deep-links { display: flex; flex-wrap: wrap; gap: 8px 18px; max-width: 430px; padding-top: 7px; }
+.stemmoire-deep-links a { color: #284735; font-size: .84rem; font-weight: 700; line-height: 1.4; text-decoration-color: #9aae9b; text-decoration-thickness: 1px; text-underline-offset: 4px; }
+.stemmoire-deep-links a:hover { color: #193225; text-decoration-color: #193225; }
 .stemmoire-visual { position: relative; min-height: 530px; border: 1px solid #aebcab; border-radius: 26px; background: #f7f3e9; box-shadow: 0 26px 64px rgba(38, 65, 47, .15); isolation: isolate; }
 .stemmoire-visual::before { position: absolute; inset: 20px; border: 1px solid rgba(89, 110, 91, .24); border-radius: 18px; content: ""; }
 .stemmoire-notes { position: absolute; top: 44px; left: 42px; z-index: 2; display: flex; flex-direction: column; align-items: flex-start; gap: 8px; }
