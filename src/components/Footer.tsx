@@ -18,6 +18,7 @@ const Footer: React.FC = () => (
       <div className="footer-legal">
         <Link to="/colorcrafter/legal">ColorCrafter Legal</Link>
         <Link to="/narrativeflow/legal">NarrativeFlow Legal</Link>
+        <Link to="/toolproof/legal">ToolProof Legal</Link>
       </div>
       <p className="copyright">© 2026 MyLogix Studio LLC. All rights reserved.</p>
     </div>
