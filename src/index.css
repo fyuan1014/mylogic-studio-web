@@ -461,6 +461,96 @@ select:hover, input[type="text"]:hover { border-color: var(--blue); }
 .legal-related-document span { color: var(--ink-soft); font: 0.72rem var(--utility); letter-spacing: 0.08em; text-transform: uppercase; }
 .legal-related-document a { font-weight: 750; }
 
+/* ToolProof product review page — a compact workshop evidence ledger. */
+.toolproof-page {
+    --tp-navy: #102a36;
+    --tp-blue: #0e7186;
+    --tp-green: #2c7a62;
+    --tp-amber: #e8a72b;
+    --tp-paper: #f7f9f8;
+    --tp-zinc: #d7dee0;
+    background: var(--tp-paper);
+    color: var(--tp-navy);
+}
+.toolproof-page h1, .toolproof-page h2, .toolproof-page h3 { color: var(--tp-navy); }
+.toolproof-hero { position: relative; padding: clamp(72px, 10vw, 132px) 0 92px; overflow: hidden; border-bottom: 1px solid var(--tp-zinc); }
+.toolproof-hero::before { position: absolute; inset: 0; background-image: linear-gradient(rgba(16,42,54,.045) 1px, transparent 1px), linear-gradient(90deg, rgba(16,42,54,.045) 1px, transparent 1px); background-size: 24px 24px; content: ""; pointer-events: none; }
+.toolproof-hero-grid { position: relative; display: grid; grid-template-columns: minmax(0, .92fr) minmax(420px, .78fr); align-items: center; gap: clamp(50px, 8vw, 110px); }
+.toolproof-hero-copy h1 { max-width: 760px; margin-bottom: 26px; font-size: clamp(3.2rem, 6.2vw, 6.3rem); line-height: .96; letter-spacing: -.064em; }
+.toolproof-kicker { margin-bottom: 20px; color: var(--tp-blue); font: 600 .72rem/1.4 var(--utility); letter-spacing: .12em; text-transform: uppercase; }
+.toolproof-lede { max-width: 670px; margin-bottom: 34px; color: #526269; font-size: clamp(1.08rem, 1.6vw, 1.3rem); line-height: 1.62; }
+.toolproof-primary { background: var(--tp-blue); color: white; box-shadow: 0 12px 28px rgba(14,113,134,.24); }
+.toolproof-primary:hover { background: var(--tp-navy); }
+.toolproof-scope { max-width: 660px; margin: 28px 0 0; padding-left: 14px; border-left: 3px solid var(--tp-amber); color: #627077; font-size: .82rem; }
+.toolproof-workcard { position: relative; padding: 24px; overflow: hidden; border: 1px solid #aab9bd; border-radius: 24px; background: rgba(255,255,255,.9); box-shadow: 0 28px 72px rgba(16,42,54,.16); transform: rotate(1.2deg); }
+.toolproof-workcard::after { position: absolute; right: -42px; bottom: -42px; width: 130px; height: 130px; border: 1px dashed rgba(14,113,134,.3); border-radius: 50%; content: ""; }
+.toolproof-card-rail, .toolproof-finish-row { display: flex; justify-content: space-between; align-items: center; gap: 20px; font-family: var(--utility); text-transform: uppercase; }
+.toolproof-card-rail { margin: -24px -24px 24px; padding: 13px 24px; background: var(--tp-navy); color: white; font-size: .67rem; letter-spacing: .1em; }
+.toolproof-card-rail strong { color: #74c8b0; }
+.toolproof-tool-heading { display: flex; justify-content: space-between; align-items: flex-start; gap: 20px; padding-bottom: 22px; border-bottom: 1px solid var(--tp-zinc); }
+.toolproof-tool-heading small { display: block; margin-bottom: 7px; color: #65747a; font: 600 .66rem var(--utility); letter-spacing: .1em; text-transform: uppercase; }
+.toolproof-tool-heading strong { font: 700 clamp(1.45rem, 2.5vw, 2.1rem)/1.1 var(--display); }
+.toolproof-stamp { flex: 0 0 auto; padding: 8px 10px; border: 1px solid #c8901f; background: #fff6df; color: #79530a; font: 650 .62rem/1.2 var(--utility); letter-spacing: .06em; text-transform: uppercase; transform: rotate(-1.5deg); }
+.toolproof-observation { margin: 22px 0; color: #53646b; }
+.toolproof-price-row { display: grid; gap: 4px; padding: 18px; border-left: 4px solid var(--tp-amber); background: #fbf5e7; }
+.toolproof-price-row span, .toolproof-price-row small { color: #6b767b; font: .64rem var(--utility); letter-spacing: .07em; text-transform: uppercase; }
+.toolproof-price-row strong { font: 700 1.05rem var(--display); }
+.toolproof-finish-row { margin-top: 18px; padding: 16px 18px; border-radius: 12px; background: var(--tp-blue); color: white; font-size: .72rem; letter-spacing: .04em; }
+.toolproof-finish-row strong { font-weight: 600; }
+.toolproof-proofbar { border-bottom: 1px solid var(--tp-zinc); background: var(--tp-navy); color: white; }
+.toolproof-proofbar .site-shell { display: grid; grid-template-columns: repeat(3, 1fr); }
+.toolproof-proofbar span { padding: 18px 20px; font: 500 .7rem var(--utility); letter-spacing: .05em; text-align: center; text-transform: uppercase; }
+.toolproof-proofbar span + span { border-left: 1px solid rgba(255,255,255,.18); }
+.toolproof-section { padding: clamp(82px, 11vw, 142px) 0; border-bottom: 1px solid var(--tp-zinc); }
+.toolproof-section-heading { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(260px, .55fr); align-items: end; gap: 40px 90px; margin-bottom: 56px; }
+.toolproof-section-heading .toolproof-kicker { grid-column: 1 / -1; margin-bottom: -18px; }
+.toolproof-section-heading h2 { max-width: 780px; margin: 0; }
+.toolproof-section-heading > p:last-child { margin: 0 0 5px; color: #5b696f; }
+.toolproof-section-heading.compact { display: block; }
+.toolproof-section-heading.compact .toolproof-kicker { margin-bottom: 20px; }
+.toolproof-section-heading.compact h2 { max-width: 880px; }
+.toolproof-flow-list { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; margin: 0; padding: 1px; background: #aebbbe; list-style: none; }
+.toolproof-flow-list li { min-height: 280px; padding: 28px; background: white; }
+.toolproof-flow-list li > span { display: block; margin-bottom: 70px; color: var(--tp-blue); font: 600 .7rem var(--utility); }
+.toolproof-flow-list h3 { margin-bottom: 14px; }
+.toolproof-flow-list p { margin: 0; color: #5d696f; }
+.toolproof-evidence-section { background: #e9eff0; }
+.toolproof-evidence-grid { display: grid; grid-template-columns: minmax(0, .78fr) minmax(420px, 1fr); gap: clamp(60px, 10vw, 140px); align-items: center; }
+.toolproof-evidence-grid > div:first-child > p:last-child { max-width: 570px; color: #56656b; font-size: 1.08rem; }
+.toolproof-stamp-stack { display: grid; gap: 12px; }
+.toolproof-trust-card { display: grid; grid-template-columns: 220px 1fr; gap: 24px; padding: 22px 24px; border: 1px solid #b6c1c4; border-left-width: 6px; background: white; }
+.toolproof-trust-card span { align-self: start; font: 650 .75rem/1.35 var(--utility); letter-spacing: .06em; text-transform: uppercase; }
+.toolproof-trust-card p { margin: 0; color: #5c686d; }
+.toolproof-trust-card.verified { border-left-color: var(--tp-green); }
+.toolproof-trust-card.verified span { color: var(--tp-green); }
+.toolproof-trust-card.seller { border-left-color: var(--tp-blue); }
+.toolproof-trust-card.seller span { color: var(--tp-blue); }
+.toolproof-trust-card.ai { border-left-color: var(--tp-amber); }
+.toolproof-trust-card.ai span { color: #815a0a; }
+.toolproof-table-wrap { overflow-x: auto; border: 1px solid #aebbbe; background: white; }
+.toolproof-capability-table { width: 100%; min-width: 720px; border-collapse: collapse; text-align: left; }
+.toolproof-capability-table th, .toolproof-capability-table td { padding: 20px 22px; border-bottom: 1px solid var(--tp-zinc); vertical-align: top; }
+.toolproof-capability-table thead th { background: var(--tp-navy); color: white; font: 600 .68rem var(--utility); letter-spacing: .08em; text-transform: uppercase; }
+.toolproof-capability-table tbody th { width: 180px; color: var(--tp-blue); font-family: var(--display); }
+.toolproof-capability-table tbody td { color: #4e5e64; }
+.toolproof-capability-table tbody tr:last-child > * { border-bottom: 0; }
+.toolproof-affiliation { margin: 18px 0 0; color: #6a777c; font-size: .78rem; }
+.toolproof-data-section { background: var(--tp-navy); color: white; }
+.toolproof-data-section h2, .toolproof-data-section h3 { color: white; }
+.toolproof-data-section .toolproof-kicker { color: #70c6ae; }
+.toolproof-data-grid { display: grid; grid-template-columns: minmax(0, .72fr) minmax(440px, 1fr); gap: clamp(60px, 10vw, 140px); }
+.toolproof-data-list { display: grid; }
+.toolproof-data-list article { padding: 27px 0; border-top: 1px solid rgba(255,255,255,.18); }
+.toolproof-data-list article:last-child { border-bottom: 1px solid rgba(255,255,255,.18); }
+.toolproof-data-list h3 { margin-bottom: 10px; font-size: 1.25rem; }
+.toolproof-data-list p { margin: 0; color: #c0cdd1; }
+.toolproof-review-section { padding: 72px 0; background: #dfe7e8; }
+.toolproof-review-card { display: grid; grid-template-columns: 1fr auto; gap: 50px; align-items: center; padding: clamp(28px, 5vw, 58px); border: 1px solid #9eafb3; background: white; }
+.toolproof-review-card h2 { margin-bottom: 18px; font-size: clamp(2.2rem, 4vw, 4rem); }
+.toolproof-review-card > div:first-child > p:last-child { max-width: 660px; margin: 0; color: #5a686e; }
+.toolproof-review-links { display: flex; flex-direction: column; align-items: flex-start; gap: 10px; }
+.toolproof-review-links > a:not(.button) { color: var(--tp-blue); font-weight: 700; text-underline-offset: 4px; }
+
 @media (max-width: 980px) {
     .desktop-nav { display: none; }
     .header-inner { grid-template-columns: 1fr auto; }
@@ -490,6 +580,10 @@ select:hover, input[type="text"]:hover { border-color: var(--blue); }
     .demo-arrow { flex-direction: row; justify-content: center; }
     .demo-arrow span { transform: rotate(90deg); }
     .process-demo figcaption { grid-column: 1; }
+    .toolproof-hero-grid, .toolproof-section-heading, .toolproof-evidence-grid, .toolproof-data-grid { grid-template-columns: 1fr; }
+    .toolproof-section-heading .toolproof-kicker { grid-column: auto; margin-bottom: -10px; }
+    .toolproof-workcard { max-width: 680px; transform: none; }
+    .toolproof-review-card { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 720px) {
@@ -569,6 +663,28 @@ select:hover, input[type="text"]:hover { border-color: var(--blue); }
     .legal-language-bar { top: 68px; }
     .legal-product-mark { width: 112px; height: 112px; font-size: 1.9rem; }
     .demo-image-frame { height: 390px; }
+    .toolproof-hero { padding-top: 62px; }
+    .toolproof-hero-copy h1 { font-size: clamp(2.8rem, 13vw, 4.3rem); }
+    .toolproof-workcard { padding: 18px; border-radius: 18px; }
+    .toolproof-card-rail { margin: -18px -18px 20px; padding-inline: 18px; }
+    .toolproof-tool-heading, .toolproof-trust-card { grid-template-columns: 1fr; flex-direction: column; }
+    .toolproof-stamp { align-self: flex-start; }
+    .toolproof-proofbar .site-shell, .toolproof-flow-list { grid-template-columns: 1fr; }
+    .toolproof-proofbar span + span { border-top: 1px solid rgba(255,255,255,.18); border-left: 0; }
+    .toolproof-flow-list li { min-height: 0; }
+    .toolproof-flow-list li > span { margin-bottom: 34px; }
+    .toolproof-trust-card { gap: 10px; }
+    .toolproof-table-wrap { overflow: visible; border: 0; background: transparent; }
+    .toolproof-capability-table { display: block; min-width: 0; }
+    .toolproof-capability-table thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+    .toolproof-capability-table tbody, .toolproof-capability-table tr { display: block; }
+    .toolproof-capability-table tbody tr { margin-bottom: 16px; border: 1px solid #aebbbe; background: white; }
+    .toolproof-capability-table tbody th { display: block; width: auto; padding: 16px 18px; border-bottom: 0; background: var(--tp-navy); color: white; }
+    .toolproof-capability-table tbody td { display: grid; grid-template-columns: minmax(104px, .42fr) 1fr; gap: 14px; padding: 17px 18px; }
+    .toolproof-capability-table tbody td::before { color: var(--tp-blue); content: attr(data-label); font: 650 .65rem/1.35 var(--utility); letter-spacing: .05em; text-transform: uppercase; }
+    .toolproof-capability-table tbody tr:last-child > * { border-bottom: 1px solid var(--tp-zinc); }
+    .toolproof-capability-table tbody tr:last-child td:last-child { border-bottom: 0; }
+    .toolproof-review-links .button { width: 100%; }
 }
 
 @media (prefers-reduced-motion: reduce) {

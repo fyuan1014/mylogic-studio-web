@@ -13,6 +13,7 @@ import NarrativeFlowPrivacyPolicyPage from './pages/NarrativeFlowPrivacyPolicyPa
 import NarrativeFlowTermsOfServicePage from './pages/NarrativeFlowTermsOfServicePage';
 import ToolProofLegalPage from './pages/ToolProofLegalPage';
 import ToolProofLegalDocumentPage from './pages/ToolProofLegalDocumentPage';
+import ToolProofPage from './pages/ToolProofPage';
 
 const ScrollManager: React.FC = () => {
   const { pathname, hash } = useLocation();
@@ -48,6 +49,7 @@ function App() {
           <Route path="/narrativeflow/privacy-policy" element={<NarrativeFlowPrivacyPolicyPage />} />
           <Route path="/narrativeflow/terms-of-service" element={<NarrativeFlowTermsOfServicePage />} />
           <Route path="/toolproof/legal" element={<ToolProofLegalPage />} />
+          <Route path="/toolproof" element={<ToolProofPage />} />
           <Route path="/toolproof/privacy-policy" element={<ToolProofLegalDocumentPage kind="privacy" />} />
           <Route path="/toolproof/terms-of-service" element={<ToolProofLegalDocumentPage kind="terms" />} />
           <Route path="/services" element={<Navigate to="/#services" replace />} />
