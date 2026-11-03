@@ -16,6 +16,7 @@ import ToolProofLegalDocumentPage from './pages/ToolProofLegalDocumentPage';
 import ToolProofPage from './pages/ToolProofPage';
 import SchoolActionLegalPage from './pages/SchoolActionLegalPage';
 import SchoolActionLegalDocumentPage from './pages/SchoolActionLegalDocumentPage';
+import SchoolActionPage from './pages/SchoolActionPage';
 
 const ScrollManager: React.FC = () => {
   const { pathname, hash } = useLocation();
@@ -55,6 +56,7 @@ function App() {
           <Route path="/toolproof/privacy-policy" element={<ToolProofLegalDocumentPage kind="privacy" />} />
           <Route path="/toolproof/terms-of-service" element={<ToolProofLegalDocumentPage kind="terms" />} />
           <Route path="/schoolaction/legal" element={<SchoolActionLegalPage />} />
+          <Route path="/schoolaction" element={<SchoolActionPage />} />
           <Route path="/schoolaction/privacy-policy" element={<Navigate to="/schoolaction/en/privacy-policy" replace />} />
           <Route path="/schoolaction/terms-of-service" element={<Navigate to="/schoolaction/en/terms-of-service" replace />} />
           <Route path="/schoolaction/:locale/privacy-policy" element={<SchoolActionLegalDocumentPage kind="privacy" />} />

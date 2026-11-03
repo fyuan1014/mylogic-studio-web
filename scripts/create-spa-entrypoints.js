@@ -7,6 +7,20 @@ const sitemapPath = path.join(buildDirectory, 'sitemap.xml');
 const siteOrigin = 'https://www.mylogicstudio.com';
 
 const routeMetadata = {
+  '/schoolaction': {
+    title: 'SchoolAction | School notices made actionable',
+    description: 'SchoolAction turns school notices into clear family actions, dates, questions, and editable English email drafts with Chinese and Spanish support.',
+    keywords: 'school notice app, parent school communication, Chinese parents, Hispanic families, bilingual school notices, SchoolAction',
+    structuredData: {
+      '@context': 'https://schema.org',
+      '@type': 'SoftwareApplication',
+      name: 'SchoolAction',
+      applicationCategory: 'EducationalApplication',
+      operatingSystem: 'iOS',
+      url: `${siteOrigin}/schoolaction`,
+      creator: { '@type': 'Organization', name: 'MyLogix Studio LLC', url: `${siteOrigin}/` }
+    }
+  },
   '/products': {
     title: 'Products · MyLogix Studio | Stemmoire, TickerCase & ColorCrafter',
     description: 'Explore MyLogix Studio products including Stemmoire, an AI floral design and virtual flower-arranging application, plus TickerCase and ColorCrafter.',
